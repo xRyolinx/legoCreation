@@ -7,7 +7,7 @@ import body from "../../Assets/lego/body.svg"
 import legs from "../../Assets/lego/legs.svg"
 import Button from "../../components/Button"
 import { useNavigate } from "react-router-dom"
-
+import LegoPart from "./LegoPart"
 
 const Step1 = () => {
     // when resize
@@ -27,6 +27,11 @@ const Step1 = () => {
     
     // states
     const navigate = useNavigate()
+    const [svgDim, setSvgDim] = useState({
+        'height': '',
+        'width': '',
+        'marginTop': '',
+    })
     const [selected, setSelected] = useState(null)
     const [rows, setRows] = useState({
         "1": {
@@ -60,21 +65,6 @@ const Step1 = () => {
 
     // Lego Row Component
     const LegoRow = ({ state, src, alt, className, classNameImg = "" }) => {
-        // on load svg
-        const onLoadImg = (e) => {
-            const img = e.target;
-            const scale = large ? 1 : 0.7
-
-            const height = img.height * scale
-            const width = img.width * scale
-
-            const oldMarginTop = (window.getComputedStyle(img).marginTop).slice(0, -2)
-            const marginTop = oldMarginTop * scale
-
-            img.style.height = `${height}px`
-            img.style.width = `${width}px`
-            img.style.marginTop = `${marginTop}px`
-        }
         // hover
         const handleMouseEnter = (e) => {
             let row = e.target
@@ -99,7 +89,7 @@ const Step1 = () => {
                 onMouseLeave={handleMouseLeave}
                 onClick={handleClick}
                 style={{backgroundColor: selected == state['id'] ? '#BBBBBB' : 'transparent'}}>
-                <img onLoad={onLoadImg} src={src} alt={alt} className={`${classNameImg} h-full`} onMouseEnter={() => (console)} />
+                    <LegoPart large={large} src={src} alt={alt} classNameImg={classNameImg} />
             </div>
         )
     }
