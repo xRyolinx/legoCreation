@@ -103,6 +103,8 @@ const Step1 = () => {
 
     // handleChange
     const handleChange = (e) => {
+        if (!selected) {return}
+        
         // set values
         const val = e.target.value
         setRows((old) => {

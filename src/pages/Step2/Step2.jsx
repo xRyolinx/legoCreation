@@ -106,7 +106,7 @@ const Step2 = () => {
       </div>
 
       {/* stock colors */}
-      <div className="hair"></div>
+      <div id="kamzebyl" className="hair"></div>
       <div className="skin"></div>
       <div className="eyes"></div>
       <div className="shirt"></div>
