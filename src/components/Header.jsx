@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Header = ({showFirst = true}) => {
     return (
@@ -10,10 +11,11 @@ const Header = ({showFirst = true}) => {
             : null
             }
             <h4>
-                If you don’t know what HTML/CSS is<br /> <a
-                    href="./introHTML-CSS.html" className="underline text-blue-600 hover:text-blue-800">
+                If you don’t know what HTML/CSS is<br />
+                <Link
+                    to="/guide" className="underline text-blue-600 hover:text-blue-800">
                     This is for you
-                </a>
+                </Link>
 
             </h4>
         </section>

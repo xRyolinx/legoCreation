@@ -17,7 +17,7 @@ const HomePage = () => {
             </div>
 
             {/* button */}
-            <Button className="bg-yellow-400" content={'Start Now !'}
+            <Button className="bg-yellow-400 mb-[50px]" content={'Start Now !'}
                 onClick={() => navigate('/step1')} />
         </main>
     )

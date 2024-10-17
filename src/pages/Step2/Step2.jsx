@@ -91,7 +91,7 @@ const Step2 = () => {
       </div>
 
       {/* text box */}
-      <div className="w-full my-[60px] lg:my-[100px] h-[600px] flex justify-center items-center">
+      <div className="w-full my-[50px] lg:my-[80px] h-[500px] lg:h-[600px] flex justify-center items-center">
         <textarea type='text'
           className='w-full max-w-[500px] h-full px-[30px] py-[10px]
                 bg-gray-800 border border-gray-700 rounded-md
@@ -113,9 +113,9 @@ const Step2 = () => {
       <div className="pants"></div>
 
       {/* buttons */}
-      <div className="lg:flex justify-center items-center">
-        <Button onClick={() => navigate('/congrats')} content="Next" className="bg-yellow-300 mx-auto lg:mx-[20px] mb-[20px] lg:mb-[50px]" />
-        <Button onClick={() => navigate('/step1')} content="Prev" className="bg-red-400 mx-auto lg:mx-[20px] my-[0]" />
+      <div className="lg:flex justify-center items-center lg:flex-row-reverse">
+        <Button onClick={() => navigate('/congrats')} content="Next" className="bg-yellow-300 mx-auto lg:mx-[20px] mb-[18px] lg:mb-[50px]" />
+        <Button onClick={() => navigate('/step1')} content="Prev" className="bg-red-400 mx-auto lg:mx-[20px] my-[0] mb-[50px]" />
       </div>
 
 

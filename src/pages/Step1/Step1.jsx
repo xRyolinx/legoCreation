@@ -146,7 +146,7 @@ const Step1 = () => {
             </div>
 
             {/* text box */}
-            <div className="w-full my-[100px] h-[200px] flex justify-center items-center">
+            <div className="w-full my-[50px] lg:my-[80px] h-[200px] flex justify-center items-center">
                 <textarea type='text'
                 className='w-full max-w-[400px] h-full p-[30px] py-[20px]
                 bg-gray-800 border border-gray-700 rounded-md
@@ -160,7 +160,7 @@ const Step1 = () => {
             </div>
 
             {/* button */}
-            <Button onClick={()=>navigate('/step2')} content="Next" className="bg-yellow-300"/>
+            <Button onClick={()=>navigate('/step2')} content="Next" className="bg-yellow-300 mb-[50px]"/>
         </main>
     )
 }

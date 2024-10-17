@@ -74,9 +74,9 @@ const CongratsPage = () => {
         </div>
 
         {/* buttons */}
-      <div className="lg:flex justify-center items-center mt-[100px]">
-        <Button onClick={() => downloadPNG()} content="Share" className="bg-yellow-300 mx-auto lg:mx-[20px] mb-[20px] lg:mb-[50px]" />
-        <Button onClick={() => navigate('/')} content="Home" className="bg-red-400 mx-auto lg:mx-[20px] my-[0]" />
+      <div className="lg:flex justify-center items-center mt-[100px] lg:flex-row-reverse">
+        <Button onClick={() => downloadPNG()} content="Share" className="bg-yellow-300 mx-auto lg:mx-[20px] mb-[19px] lg:mb-[50px]" />
+        <Button onClick={() => navigate('/')} content="Home" className="bg-red-400 mx-auto lg:mx-[20px] my-[0] mb-[50px]" />
       </div>
     </main>
   )
