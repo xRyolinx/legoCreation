@@ -64,7 +64,7 @@ const GuidePage = () => {
                 </div>
 
                 {/* <!-- Button centered at the bottom --> */}
-                <Button content={'To Step 1'} className={"bg-yellow-400"}
+                <Button content={'Go back'} className={"bg-yellow-400 mb-[50px]"}
                 onClick={()=>navigate(-1)}></Button>
             </section>
 
