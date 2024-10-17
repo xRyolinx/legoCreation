@@ -64,10 +64,8 @@ const GuidePage = () => {
                 </div>
 
                 {/* <!-- Button centered at the bottom --> */}
-                <a href="index.html" className="mb-5">
-                    <Button content={'To Step 1'} className={"bg-yellow-400"}
-                    onClick={()=>navigate('/step1')}></Button>
-                </a>
+                <Button content={'To Step 1'} className={"bg-yellow-400"}
+                onClick={()=>navigate(-1)}></Button>
             </section>
 
         </main>
